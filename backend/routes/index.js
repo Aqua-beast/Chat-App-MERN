@@ -2,7 +2,7 @@ const express = require('express')
 const registerUser = require('../controller/registerUser')
 const checkEmail = require('../controller/checkEmail')
 const checkPassword = require('../controller/checkPassword')
-const userDetails = require('../controller/userDetails')
+const UserDetails = require('../controller/UserDetails')
 const logout = require('../controller/logout')
 const updateUserDetails = require('../controller/updateUserDetails')
 const searchUser = require('../controller/searchUser')
@@ -16,7 +16,7 @@ router.post('/email',checkEmail)
 //check user password
 router.post('/password',checkPassword)
 //login user details
-router.get('/user-details',userDetails)
+router.get('/user-details',UserDetails)
 //logout user
 router.get('/logout',logout)
 //update user details
